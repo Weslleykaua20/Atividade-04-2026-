@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;500;600;700;800&family=Syncopate:wght@400;700&display=swap');
+
+/** Colocar id topo no primiero elçemento da pagina **/
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fffefb;
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    height: auto;
+}
+
+main {
+    width: 100%;
+    display: block; /* Garante que as seções fiquem uma abaixo da outra */
+}
+
+
+
+/* - alterando o scroll - */
+
+::-webkit-scrollbar {
+    width: 0.7rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fffefb;
+    margin-block: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 10px;  
+    border: 3px solid transparent;
+    background-clip: padding-box;
+}
+
+
+/* - cabeçalho -*/
+
+.cabecalho{
+    background-color: #fffefb9f;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem 0 1.8rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    box-shadow: inset 0 -1px 0 rgba(117, 117, 117, 0.1);
+}
+
+
+/* - logo -*/
+
+.logo {
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+
+.logo:hover {
+    transform: scale(1.07);
+    transition: transform 0.3s ease;
+}
+
+/* - menu de links -*/
+
+.navegacao{
+    margin-left: 4.5%;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li a {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: #3d3d3d;
+    transition: color 0.3s ease;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2.2px;
+    font-weight: bold;
+    color: #000000;
+}
+
+
+/* - botão de contato -*/
+
+.button-container {
+    appearance: none;
+    background-color: transparent;
+    border: 0.124em solid #616161;
+    border-radius: 0.75em;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #474747;
+    padding: 0.65rem 1.4rem;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+
+.button-container:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px)
+}
+
+.button-container:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+
+/* ==============================
+         - corpo do site -
+   ============================== */
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem 4rem 0rem 4rem;
+    text-align: center;
+}
+
+.sublogo {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.7rem;
+}
+
+.line {
+    width: 40px;
+    height: 1px;
+    background-color: #1A1A1A;
+}
+
+.home-titulo {
+    font-family: 'Syncopate', sans-serif;
+    font-size: 4rem;
+    color: #000000;
+    margin: 0;
+    width: 50%;
+}
+
+.negrito {
+    color: #3d3d3d;
+    display: block;
+}
+
+.ponto{
+    color: #000000;
+}
+
+
+.home-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: #3d3d3d;
+    width: 47%;
+    margin-top: 2rem;
+    overflow-wrap: break-word;
+    font-weight: 350;
+}
+
+/* ---  botoes da home ---  */
+
+.home-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 3rem;
+    margin: 3rem 2rem 0rem 2rem;
+}
+
+.bt{
+    appearance: none;
+    border-radius: 10em;
+    background: transparent;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: 'inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 1rem 2rem;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+
+.homebt1 {
+    background-color: black;
+}
+
+.homebt1 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.homebt1:hover {
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2.5px);
+}
+
+.homebt2 a {
+    color: #000;
+    text-decoration: none;
+}
+
+.homebt2:hover {
+    background: transparent;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2.5px);
+}
+
+.sepline {
+    width: 99%;
+    border: none;
+    border: 0.2px solid #b6b6b66e;
+    margin-top: 7rem;
+}
+
+
+/*  ==================  
+    pagina de serviços
+========================*/
+
+
+.tituser{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 6REM 2.5REM 3REM 2.5rem;
+}
+
+.serv-content {
+    text-align: left;
+    width: 50%;
+}
+
+.serv-content p {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: #000000;
+    margin: 0;
+    width: 50%;
+}
+
+.serv-content h2 {
+    font-family: 'Syncopate', sans-serif;
+    font-size: 2.6rem;
+    color: #000000;
+    margin: 0;
+    max-width: min-content;
+    margin-top: 0.7rem;
+}
+
+.subt-serv{
+    margin-right: 5%;
+}
+
+.subt-serv p {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #3d3d3d;
+    margin: 0;
+    line-height: 1.6;
+    border-left: 1px solid #ccc;
+    padding-left: 20px;
+    max-width: 350px;
+}
+
+/* cards de serviços */
+
+.serv-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 2.5rem;
+    margin-bottom: 5rem;
+}
+
+.grid-item{
+    display: block;
+    flex-direction: column;
+    padding: 1.5rem 0 2rem 1rem;
+    width: 75%;
+}
+
+.nu1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    color: #747474;
+    text-align: right;
+    width: 100%;
+}
+
+
+.grid-item h3 {
+    font-family: 'montserrat', sans-serif;
+    font-size: 1.6rem;
+    color: #000000;
+    
+}
+
+.grid-item img {
+    width: 30px;
+    height: 30px;
+}
+
+.paragrafo {
+    margin-top: 1rem;
+    max-width: 500px;
+    line-height: 1.1;
+    font-weight: 400;
+    color: #747474;
+}
+
+#b1, #b2{
+    padding-right: 4rem;
+    border-right: 1px #b6b6b66e solid;
+}
+
+/* ============================
+        PAGINA DE TRABALHOS
+   ============================ */
+
+.workti {
+    display: block;
+    margin: 6rem 2.5rem 2rem 2.5rem;
+}
+
+.workti h2 {
+    font-family: 'Syncopate', sans-serif;
+    font-size: 40px;
+    color: #000;
+    margin: 0;
+    max-width: min-content;
+}
+
+.workti p {
+    text-align: right;
+    font-family: 'inter', sans-serif;
+    font-size: 13px;
+    color: #474747;
+    margin: 0;
+}
+
+.workline {
+    width: auto;
+    border: none;
+    border: 0.1px solid #00000083;
+    margin-top: 7rem;
+}
+
+/* --- grid de trabalhos --- */
+
+.grid-photos {
+    display: grid;
+    justify-content: space-between;
+    margin: 2rem 2.5rem 3rem 2.5rem;
+}
+
+.grid-photos IMG {
+    height: 400px;
+    aspect-ratio: 4/5;
+}
+
+
+
+
+
+
+
+
+/* ============================== 
+        - responsividade -
+ ==================================*/
+
+/* --- 1200px: desktop grande --- */
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 0 2rem 0 1.8rem;
+        height: 100px;
+    }
+
+    .menu {
+        gap: 2.5rem;
+    }
+
+    .menu li a {
+        font-size: 17px;
+    }
+
+    .button-container {
+        font-size: 15px;
+        padding: 0.9em 2em;
+    }
+}
+
+
+/* --- 1024px: tablet grande / laptop pequeno --- */
+@media (max-width: 1024px) {
+    .cabecalho {
+        padding: 0 1.5rem;
+        height: 90px;
+    }
+
+    .logo {
+        width: 52px;
+        height: 52px;
+    }
+
+    .menu {
+        gap: 1.8rem;
+    }
+
+    .menu li a {
+        font-size: 15px;
+    }
+
+    .button-container {
+        font-size: 14px;
+        padding: 0.8em 1.6em;
+    }
+}
+
+
+/* --- 768px: tablet --- */
+@media (max-width: 768px) {
+    .cabecalho {
+        padding: 0 1.2rem;
+        height: 80px;
+    }
+
+    .logo {
+        width: 46px;
+        height: 46px;
+    }
+
+    .menu {
+        gap: 1.2rem;
+    }
+
+    .menu li a {
+        font-size: 13px;
+    }
+
+    .button-container {
+        font-size: 13px;
+        padding: 0.65em 1.2em;
+        border-radius: 0.75em;
+    }
+}
+
+
+/* --- 480px: mobile --- */
+@media (max-width: 480px) {
+
+    .cabecalho{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: auto;
+        padding: 0 1rem;
+    }
+
+    .logo {
+        width: 48px;
+        height: 48px;
+        margin-top: -4rem;
+    }
+
+    .navegacao li {
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 1rem;
+        margin: 1rem 0;
+    }
+
+    .button-container {
+        width: 110px;
+        padding: 0.7em 1.2em;
+        margin-top: -5rem;
+    }
+}
