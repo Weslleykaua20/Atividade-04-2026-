@@ -508,6 +508,7 @@ main {
 }
 
 
+
 /* ============================== 
         - RESPONSIVIDADE COMPLETA -
  ==================================*/
@@ -555,7 +556,7 @@ main {
 
     .navegacao {
         margin-left: 0;
-        order: 3; /* Move o menu para baixo no mobile */
+        order: 3; /* Move o menu para baixo no celular */
         width: 100%;
     }
 
@@ -639,13 +640,13 @@ main {
         gap: 2rem;
     }
 
-    /* Ajuste fino no cabeçalho mobile */
+    /* Ajuste no cabeçalho celular */
     .logo {
-        margin-top: 0; /* Remove o -4rem anterior */
+        margin-top: 0;
     }
 
     .button-container {
-        margin-top: 0; /* Remove o -5rem anterior */
+        margin-top: 0; 
         width: auto;
     }
 }
