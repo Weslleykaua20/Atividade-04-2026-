@@ -1,2 +1,11 @@
-# Atividade-04-2026-
-Site criado para com fins acadêmicos.
+# Atividade 04 - Site
+
+Landing page responsiva feita com HTML, CSS e JavaScript.
+
+## Tecnologias
+- HTML5
+- CSS3
+- JavaScript
+
+## Objetivo
+Praticar layout e responsividade
