@@ -4,86 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Meu Portfolio</title>
+    <title>DK Studio Design</title>
 </head>
 <body>
     <header class="cabecalho">
+    <div class="container">
+
         <a href="#topo">
             <img class="logo" src="logo.png" alt="Logo">
         </a>
+
         <nav class="navegacao">
             <ul class="menu">
                 <li><a href="#topo">HOME</a></li>
-                <li><a href="#Sobre">SOBRE</a></li>
-                <li><a href="#Projetos">TRABALHOS</a></li>
-                <li><a href="#Contato">CONTATO</a></li>
+                <li><a href="#trabalhos">TRABALHOS</a></li>
+                <li><a href="#sobre">SOBRE</a></li>
+                <li><a href="#contato">CONTATO</a></li>
             </ul>
-        </nav>    
-        <button class="button-container" onclick="window.location.href='#contato'">
-                Contato
+        </nav>
+
+        <button class="button-cont">
+            Contato
         </button>
+
+     </div>
     </header>
 
     <main>
-        <section class="home" id="home">
-            <div class="home-content">
-                
-                <p class="sublogo"><span class="line"></span>DK DESIGN STUDIO<span class="line"></span></p>
+        <section id="topo" class="home" >
+            <div class="container">
+                <div class="home-content">
+                    <p class="sublogo"><span class="line"></span>DK DESIGN STUDIO<span class="line"></span></p>
 
-                <h1 class="home-titulo">PRECISÃO NO <span class="negrito">DESIGN<span class="ponto">.</span></span>
-                EXCELÊNCIA NO <span class="negrito">CÓDIGO<span class="ponto">.</span></span></h1>
-                
-                <P class="home-text">Desenvolvemos ecossistemas digitais onde o design focado no usuário encontra a performance técnica impecável.</P>
-            </div>
+                    <h1 class="home-titulo">PRECISÃO NO <span class="negrito">DESIGN<span class="ponto">.</span></span>
+                    EXCELÊNCIA NO <span class="negrito">CÓDIGO<span class="ponto">.</span></span></h1>
+                    
+                    <P class="home-text">Desenvolvemos ecossistemas digitais onde o design focado no usuário encontra a performance técnica impecável.</P>
+                </div>
 
-            <div class="home-buttons">
-                <button class="bt homebt1"><a href="#contato">INICIE SEU PROJETO</a></button>
-                <button class="bt homebt2"><a href="#projetos">VER TRABALHOS</a></button>
+                <div class="home-buttons">
+                    <button class="bt homebt1"><a href="#contato">INICIE SEU PROJETO</a></button>
+                    <button class="bt homebt2"><a href="#projetos">VER TRABALHOS</a></button>
 
+                </div>
             </div>
         </section>
 
         <hr class="sepline">
 
         <section class="servicos">
-            <div class="tituser">
-                <div class="serv-content">
-                    <p>NOSSA EXPERTISE</p>
-                    <H2>SERVIÇOS <span class="negrito"> ESPECIALIZADOS</span></H2>
+            <div class="container">
+                <div class="tituser">
+                    <div class="serv-content">
+                        <p>NOSSA EXPERTISE</p>
+                        <H2>SERVIÇOS <span class="negrito"> ESPECIALIZADOS</span></H2>
+                    </div>
+                    <div class="subt-serv">
+                        <p>Focamos no essencial. Entregamos soluções digitais robustas sem excessos, unindo a precisão do design com a eficiência técnica.</p>
+                    </div>
                 </div>
-                <div class="subt-serv">
-                    <p>Focamos no essencial. Entregamos soluções digitais robustas sem excessos, unindo a precisão do design com a eficiência técnica.</p>
-                </div>
-            </div>
 
-            <div class="serv-grid">
-                <div id="b1" class="grid-item">
-                    <p class="nu1">/01</p>
-                    <img src="tela.png" alt="Icone de Design">
-                    <h3>Interfaces Web de Alta Performance</h3>
-                    <p class="paragrafo">Desenvolvimento front-end escalável, otimizado para velocidade extrema e SEO, garantindo uma experiência fluida para o usuário final.</p>
-                </div>
-                <div id="b2" class="grid-item">
-                    <p class="nu1">/02</p>
-                    <img src="ux.png" alt="Icone de Desenvolvimento">
-                    <h3>Prototipagem UX/UI</h3>
-                    <p class="paragrafo">Do wireframe ao design interativo. Criamos jornadas lógicas com uma estética premium que traduz a identidade da sua marca.</p>
-                </div>
-                <div class="grid-item">
-                    <p class="nu1">/03</p>
-                    <img src="mala.png" alt="Icone de Consultoria">
-                    <h3>CRebranding Digital</h3>
-                    <p class="paragrafo">Posicionamento estratégico e renovação visual. Elevamos sua comunicação digital para atrair um público mais qualificado e sofisticado.</p>
+                <div class="serv-grid">
+                    <div id="b1" class="grid-item">
+                        <p class="nu1">/01</p>
+                        <img src="tela.png" alt="Icone de Design">
+                        <h3>Interfaces Web de Alta Performance</h3>
+                        <p class="paragrafo">Desenvolvimento front-end escalável, otimizado para velocidade extrema e SEO, garantindo uma experiência fluida para o usuário final.</p>
+                    </div>
+                    <div id="b2" class="grid-item">
+                        <p class="nu1">/02</p>
+                        <img src="ux.png" alt="Icone de Desenvolvimento">
+                        <h3>Prototipagem UX/UI</h3>
+                        <p class="paragrafo">Do wireframe ao design interativo. Criamos jornadas lógicas com uma estética premium que traduz a identidade da sua marca.</p>
+                    </div>
+                    <div class="grid-item">
+                        <p class="nu1">/03</p>
+                        <img src="mala.png" alt="Icone de Consultoria">
+                        <h3>Rebranding Digital</h3>
+                        <p class="paragrafo">Posicionamento estratégico e renovação visual. Elevamos sua comunicação digital para atrair um público mais qualificado e sofisticado.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <hr class="sepline">
 
-        <section class="trabalhos">
-            <div class="workti">
-                <h2><span class="negrito">TRABALHOS</span> SELECIONADOS</h2>
-                <P>PROJETOS RECENTES</P>
+        <section class="trabalhos" id="trabalhos">
+            <div class="container">
+                <div class="workti">
+                    <h2><span class="negrito">TRABALHOS</span> SELECIONADOS</h2>
+                    <P>PROJETOS RECENTES</P>
+                </div>
             </div>
 
             <hr class="workline">
@@ -93,7 +104,7 @@
                     <img src="hard.jpeg" alt="">
                     <hr class="cardline">
                     <div class="rent">
-                        <h2>NEXA HARDWERE SOLUTIONS</h2>
+                        <h2>NEXA HARDWARE SOLUTIONS</h2>
                         <P class="data">2024</P>
                     </div>
                     <p class="subtle-work">E-COMMERCE / IDENTIDADE</p>
@@ -113,7 +124,7 @@
                     <img src="web.jpeg" alt="">
                     <hr class="cardline">
                     <div class="rent">
-                        <h2>HORISON ESTATES</h2>
+                        <h2>HORIZON ESTATES</h2>
                         <P class="data">2025</P>
                     </div>
                     <p class="subtle-work">WEB APP / REAL ESTATE</p>
@@ -121,30 +132,35 @@
             </div>
         </section>
 
-        <section class="sobre-nos">
-            <div class="dkimg">
-                <img src="Inserir um título.jpeg" alt="imagem da nossa empresa">
-            </div>
-            <div class="studio-content">
-                <span>SOBRE A EMPRESA</span>
-                <h2>NOSSO STUDIO</h2>
-                <P class="SPACO">Nascida da intersecção entre a lógica implacável da programação e a empatia orgânica do design, a DK Design Studio não cria apenas sites. Nós projetamos máquinas digitais precisas.
-                </P>
-                <P class="SPACO">Respiramos perfeccionismo técnico. Nossa abordagem elimina o excesso para revelar a função pura, utilizando o minimalismo não apenas como uma escolha estética, mas como um princípio de engenharia para otimizar a performance e a conversão.
-                </P>
-                <p id="spacog">Acreditamos no contraste. Na força bruta de uma paleta restrita. No espaço em branco que permite ao conteúdo respirar. Se o seu objetivo é a mediocridade, não somos o estúdio certo para você.
-                </p>
-
-                <hr class="cardline">
-
-                <div class="starts">
-                    <div class="start1">
-                        <h2>10+</h2>
-                        <p>ANOS DE EXPERIÊNCIA</p>
+        <section id="sobre" class="sobre" >
+            <div class="container">
+                <div class="sobre-grid">
+                    <div class="dkimg">
+                        <img src="empresa.jpeg" alt="imagem da nossa empresa">
                     </div>
-                    <div class="start1">
-                        <h2>120</h2>
-                        <p>PROJETOS LANÇADOS</p>
+
+                    <div class="studio-content">
+                        <h5>SOBRE A EMPRESA</h5>
+                        <h2>NOSSO <span class="negri">STUDIO</span></h2> 
+                        <P class="spaco">Nascida da intersecção entre a lógica implacável da programação e a empatia orgânica do design, a DK Design Studio não cria apenas sites. Nós projetamos máquinas digitais precisas.
+                        </P>
+                        <P class="spaco">Respiramos perfeccionismo técnico. Nossa abordagem elimina o excesso para revelar a função pura, utilizando o minimalismo não apenas como uma escolha estética, mas como um princípio de engenharia para otimizar a performance e a conversão.
+                        </P>
+                        <p class="spaco" id="end">Acreditamos no contraste. Na força bruta de uma paleta restrita. No espaço em branco que permite ao conteúdo respirar. Se o seu objetivo é a mediocridade, não somos o estúdio certo para você.
+                        </p>
+
+                        <hr class="cardline">
+
+                        <div class="starts">
+                            <div class="start1">
+                                <h2>10+</h2>
+                                <p>ANOS DE EXPERIÊNCIA</p>
+                            </div>
+                            <div class="start1">
+                                <h2>120</h2>
+                                <p>PROJETOS LANÇADOS</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
