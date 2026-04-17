@@ -126,8 +126,10 @@ main {
 /* - botão de contato -*/
 
 .button-cont {
+    display: inline-block;
+    text-decoration: none;
     appearance: none;
-    background-color: transparent;
+    background: transparent;
     border: 0.124em solid #616161;
     border-radius: 0.75em;
     box-sizing: border-box;
@@ -143,6 +145,7 @@ main {
     touch-action: manipulation;
     will-change: transform;
 }
+
 
 .button-cont:hover {
     color: #fff;
@@ -227,7 +230,9 @@ main {
     margin: 3rem 2rem 0rem 2rem;
 }
 
-.bt{
+.bt {
+    display: inline-block;
+    text-decoration: none;
     appearance: none;
     border-radius: 10em;
     background: transparent;
@@ -236,6 +241,7 @@ main {
     font-family: 'inter', sans-serif;
     font-size: 14px;
     font-weight: 500;
+    color: black;
     padding: 1rem 2rem;
     transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
     user-select: none;
@@ -246,6 +252,7 @@ main {
 
 .homebt1 {
     background-color: black;
+    color: #fff;
 }
 
 .homebt1 a {
@@ -458,7 +465,7 @@ main {
 .cardline {
     width: auto;
     border: none;
-    border: 0.1px solid #b6b6b66e;  
+    border: 0.1px solid #6363636e;  
     margin: 0.5rem 0;
 }
 
@@ -541,7 +548,7 @@ main {
 .spaco {
     font-family: 'Inter', sans-serif;
     font-size: 15px;
-    color: #9e9e9e;
+    color: #ffffff;
     margin-top: 1rem;
     line-height: 1.6;
 }
@@ -549,6 +556,33 @@ main {
 #end {
     padding-bottom: 1rem;
 }
+
+.starts {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.starts h2{
+    font-family:'Montserrat' sans-serif;
+    font-weight: 400;
+}
+
+.starts p {
+    font-family: 'inter' sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #616161;
+    margin: 0;
+}
+
+.start2 {
+    padding-right: 4rem;
+}
+
+
+
+
 
 /* ============================== 
         - RESPONSIVIDADE -
